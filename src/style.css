@@ -1,0 +1,124 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.button-1:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 0 20px;
+  position: fixed;
+  zindex: 1000;
+}
+#header h1 {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  float: left;
+}
+#header label {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  float: right;
+  cursor: pointer;
+}
+#header input[type="checkbox"]:checked ~ nav {
+  display: block;
+}
+#header nav {
+  float: right;
+  width: 80%;
+  height: 100%;
+  display: none;
+}
+#header nav ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+#header nav ul a {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url(img/hero-image.svg) no-repeat center center/cover;
+}
+#home #greetBox {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#home #greetBox h1 {
+  font-size: 4em;
+}
+#home #greetBox h1 i {
+  float: right;
+  color: red;
+  font-size: inherit;
+  animation: blink 1s infinite;
+}
+#home #greetBox span {
+  font-size: 1.2em;
+}
+#home #greetBox a {
+  font-size: 0.8em;
+  margin-top: 20px;
+  background-color: white;
+  font-weight: 600;
+  border: 2px solid red;
+  width: 120px;
+  height: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+#home #greetBox a:hover {
+  background-color: red;
+  color: white;
+  box-shadow: 0 0 10px red;
+}
