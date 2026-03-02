@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-    <section id="header">
+    <div id="header">
         <h1>AshDesign</h1>
         <label for="menuNav" class="button-1">MENU</label>
         <input type="checkbox" name="menuNav" id="menuNav" style="display: none;">
@@ -15,17 +15,43 @@
             <ul>
                 <a class="button-1" href="#home">Home</a>
                 <a class="button-1" href="#about">About Us</a>
-                <a class="button-1" href="#">Services</a>
+                <a class="button-1" href="#service">Services</a>
                 <a class="button-1" href="#">Bundle</a>
                 <a class="button-1" href="#">Contact</a>
             </ul>
-    </section>
-    <section id="home">
+    </div>
+    <section id="home" style="background: url(src/img/hero-image.svg) no-repeat center center/cover;">
         <div id="greetBox">
-            <h1 id="title"><i>|</i></h1>
+            <h1 id="title"><p>|</p></h1>
             <span>"Tell Us Your Dream, We'll Make It Real!"</span>
             <a href="#about">Get Started</a>
         </div>
+    </section>
+    <section id="about">
+        <div id="banner">
+            <h1 class="section-title">About Us</h1>
+            <span>Making your Website Artistic and Life</span>
+        </div>
+        <div id="aboutContainer">
+            <div class="about-sect" style="animation-range: entry 0% cover 10%;">
+                <h2>Who We Are?</h2>
+                <p>We are an independent startup company founded in 2026 in Jakarta, Indonesia. 
+                The current internet era is the background to our presence in providing UI/UX design services.</p>
+            </div>
+            <div class="about-sect" style="animation-range: entry 0% cover 15%;">
+                <h2>What We Do?</h2>
+                <p>We are here to help clients bring their imagination and personal or business 
+                website designs to life with heart and a touch of art.</p>
+            </div>
+            <div class="about-sect" style="animation-range: entry 0% cover 20%;">
+                <h2>Why Choose Us?</h2>
+                <p>We guarantee the quality and performance of our work and provide the best service. 
+                This is proven by the 250+ clients who have given us positive feedback and created their own websites.</p>
+            </div>
+        </div>
+    </section>
+    <section id="service">
+
     </section>
 
     <script src="src/script.js"></script>

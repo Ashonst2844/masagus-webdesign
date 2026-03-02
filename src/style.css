@@ -23,8 +23,32 @@ html {
     opacity: 1;
   }
 }
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .button-1:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+.section-title {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 #header {
@@ -34,7 +58,7 @@ html {
   color: #fff;
   padding: 0 20px;
   position: fixed;
-  zindex: 1000;
+  z-index: 1000;
 }
 #header h1 {
   height: 100%;
@@ -78,14 +102,6 @@ html {
   font-weight: 600;
 }
 
-#home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  background: url(img/hero-image.svg) no-repeat center center/cover;
-}
 #home #greetBox {
   width: 400px;
   display: flex;
@@ -96,11 +112,11 @@ html {
 #home #greetBox h1 {
   font-size: 4em;
 }
-#home #greetBox h1 i {
+#home #greetBox h1 p {
   float: right;
   color: red;
   font-size: inherit;
-  animation: blink 1s infinite;
+  animation: blink 1s linear infinite;
 }
 #home #greetBox span {
   font-size: 1.2em;
@@ -118,7 +134,53 @@ html {
   align-items: center;
 }
 #home #greetBox a:hover {
-  background-color: red;
+  background: linear-gradient(45deg, red, orange);
   color: white;
   box-shadow: 0 0 10px red;
+  border: none;
+}
+
+#about #banner {
+  width: 100%;
+  height: 50%;
+  background-image: url("img/about-banner.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+#about #aboutContainer {
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-image: url("img/about-background.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  gap: 20px;
+}
+.about-sect {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  outline: 1px solid white;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  flex-direction: column;
+  text-align: center;
+  animation: appear linear;
+  animation-timeline: view();
+}
+.about-sect h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
