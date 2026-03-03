@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AshDesign</title>
+    <title>MasDesign</title>
     <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="src/img/web-ico.svg" type="image/x-icon">
 </head>
 <body>
     <div id="header">
-        <h1>AshDesign</h1>
+        <h1>MasDesign</h1>
         <label for="menuNav" class="button-1">MENU</label>
         <input type="checkbox" name="menuNav" id="menuNav" style="display: none;">
         <nav id="nav">
@@ -16,8 +17,8 @@
                 <a class="button-1" href="#home">Home</a>
                 <a class="button-1" href="#about">About Us</a>
                 <a class="button-1" href="#service">Services</a>
-                <a class="button-1" href="#">Bundle</a>
-                <a class="button-1" href="#">Contact</a>
+                <a class="button-1" href="#bundle">Bundle</a>
+                <a class="button-1" href="#contact">Contact</a>
             </ul>
     </div>
     <section id="home" style="background: url(src/img/hero-image.svg) no-repeat center center/cover;">
@@ -35,7 +36,7 @@
         <div id="aboutContainer">
             <div class="about-sect" style="animation-range: entry 0% cover 10%;">
                 <h2>Who We Are?</h2>
-                <p>We are an independent startup company founded in 2026 in Jakarta, Indonesia. 
+                <p>MasDesign are an independent startup company founded in 2026 in Jakarta, Indonesia. 
                 The current internet era is the background to our presence in providing UI/UX design services.</p>
             </div>
             <div class="about-sect" style="animation-range: entry 0% cover 15%;">
@@ -45,15 +46,114 @@
             </div>
             <div class="about-sect" style="animation-range: entry 0% cover 20%;">
                 <h2>Why Choose Us?</h2>
-                <p>We guarantee the quality and performance of our work and provide the best service. 
+                <p>We guarantee the quality and performance of MasDesign work and provide the best service. 
                 This is proven by the 250+ clients who have given us positive feedback and created their own websites.</p>
             </div>
         </div>
     </section>
     <section id="service">
-
+        <div id="serviceTitle">
+            <h1 class="section-title">Our Services</h1>
+        </div>
+        <div id="serviceContainer">
+            <div class="service-cards">
+                <h1 style="background-color: #ff2727;">Performance</h1>
+                <p>We focus on delivering high-performance solutions that meet your business needs.</p>
+                <span style="color: #ff2727;">1</span>
+            </div>
+            <div class="service-cards">
+                <h1 style="background-color: #3cff22;">Quality</h1>
+                <p>We are committed to providing high-quality services that exceed our clients' expectations.</p>
+                <span style="color: #3cff22;">2</span>
+            </div>
+            <div class="service-cards">
+                <h1 style="background-color: #20a100;">Accessibility</h1>
+                <p>We ensure that our designs are accessible to all users, including those with disabilities.</p>
+                <span style="color: #20a100;">3</span>
+            </div>
+            <div class="service-cards">
+                <h1 style="background-color: #391ae6;">Affordability</h1>
+                <p>We provide cost-effective solutions without compromising on quality.</p>
+                <span style="color: #391ae6;">4</span>
+            </div>
+            <div class="service-cards">
+                <h1 style="background-color: #13007c;">Innovation</h1>
+                <p>We stay at the forefront of design trends and technologies to deliver innovative solutions.</p>
+                <span style="color: #13007c;">5</span>
+            </div>
+            <div class="service-cards">
+                <h1 style="background-color: #fbff13;">Support</h1>
+                <p>We provide comprehensive support to ensure our clients have a seamless experience.</p>
+                <span style="color: #fbff13;">6</span>
+            </div>
+        </div>
     </section>
-
+    <section id="bundle" style="background: url(src/img/bundle-background.svg) no-repeat center center/cover;">
+        <h1 class="section-title">Check Our Bundle</h1>
+        <div id="bundleContainer">
+            <div class="bundle-cards" style="animation-range: entry 0% cover 10%;">
+                <div class="info" style="background: linear-gradient(45deg, #ff8800, #f8a100);">
+                    <h3>Bronze</h3>
+                    <span><b>Rp.</b> 49.999</span>
+                </div>
+                <span class="benefits">Simple Design, for Educational and Personal</span>
+                <a href="#check-out">Check-Out</a>
+            </div>
+            <div class="bundle-cards" style="animation-range: entry 0% cover 15%;">
+                <div class="info" style="background: linear-gradient(45deg, #8f8f8f, #e6e6e6);">
+                    <h3>Silver</h3>
+                    <span><b>Rp.</b> 99.999</span>
+                </div>
+                <span class="benefits">Standard Design, for Blog and Simple Start-Up Project</span>
+                <a href="#check-out">Check-Out</a>
+            </div>
+            <div class="bundle-cards" style="animation-range: entry 0% cover 20%;">
+                <div class="info" style="background: linear-gradient(45deg, #ffe600, #fffc52);">
+                    <h3>Gold</h3>
+                    <span><b>Rp.</b> 149.999</span>
+                </div>
+                <span class="benefits">High-Level Design, for Bussines and Big Company</span>
+                <a href="#check-out">Check-Out</a>
+            </div>
+            <div class="bundle-cards" style="animation-range: entry 0% cover 25%;">
+                <div class="info" style="background: linear-gradient(45deg, #8400ff, #c747fa);">
+                    <h3>Platinum</h3>
+                    <span><b>Rp.</b> 299.999</span>
+                </div>
+                <span class="benefits">Premium Design, for Complex User</span>
+                <a href="#check-out">Check-Out</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact" style="background-color: black;">
+        <div id="contactSection">
+            <div id="contactForm">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" placeholder="username" name="username">
+                    <input type="text" placeholder="feedback" name="feedback">
+                    <button id="submit" style="background-color: black;">Submit</button>
+                </form>
+            </div>
+            <div id="siteMap">
+                <h2>Site Map</h2>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#service">Services</a>
+                <a href="#bundle">Bundle</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <hr style="border: 1px solid #1d1d1d; width: 80%; margin: 20px auto;">
+        <div id="mediaList">
+            <a href="" style="background-color: black;"><img src="src/img/google-ico.svg" width="30px" height="30px"></a>
+            <a href="" style="background-color: black;"><img src="src/img/instagram-ico.svg" width="30px" height="30px"></a>
+            <a href="" style="background-color: black;"><img src="src/img/linkedin-ico.svg" width="30px" height="30px"></a>
+            <a href="" style="background-color: black;"><img src="src/img/telegram-ico.svg" width="30px" height="30px"></a>
+        </div>
+        <footer>Copyright &copy; 2026, All Right Reserved Masagus Ahmad Ramadhan</footer>
+    </section>
     <script src="src/script.js"></script>
 </body>
 </html>
+

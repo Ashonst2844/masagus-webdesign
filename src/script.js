@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'Ash-Design';
+var txt = 'Mas-Design';
 
 function typeWriter() {
   const title = document.getElementById("title");
