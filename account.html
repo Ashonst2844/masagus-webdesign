@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register / Login</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="src/img/web-ico.svg" type="image/x-icon">
+</head>
+<body>
+    <section id="account">
+        <div id="accBox">
+            <div class="acc-form">
+                <h1>Register</h1>
+                <form>
+                    <input type="text" name="username" id="username" placeholder="Username">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="password" name="pw" id="pw" placeholder="Password">
+                    <input type="password" name="cpw" id="cpw" placeholder="Confirm Password">
+                    <input type="submit" value="Register" class="button-2">
+                    <a href="index.html" class="button-2">Back to Home</a>
+                </form>
+            </div>
+            <div class="acc-form" style="left: 50%;">
+                <h1>Login</h1>
+                <form>
+                    <input type="text" name="username" id="username" placeholder="Username">
+                    <input type="password" name="pw" id="pw" placeholder="Password">
+                    <input type="submit" value="Login" class="button-2">
+                    <a href="index.html" class="button-2">Back to Home</a>
+                </form>
+            </div>
+            <div class="acc-sect">
+                <h1 class="sectTitle">Welcome Back!</h1>
+                <p class="sectInfo">To keep connected with us please login with your personal info</p>
+                <input type="checkbox" name="swiper" id="swiperCheck" onclick="toggleSwipe()" style="display: none;">
+                <label for="swiperCheck" class="button-2 sectButton" style="background-color: black;">Login</label>
+            </div>
+        </div>
+    </section>
+
+    <script src="src/script.js"></script>
+</body>
+</html>

@@ -10,7 +10,8 @@
 <body>
     <div id="header">
         <h1>MasDesign</h1>
-        <label for="menuNav" class="button-1">MENU</label>
+        <button class="button-1" onclick="openLogin()">Register/Login</button>
+        <label for="menuNav" class="button-1">Menu</label>
         <input type="checkbox" name="menuNav" id="menuNav" style="display: none;">
         <nav id="nav">
             <ul>
@@ -20,12 +21,13 @@
                 <a class="button-1" href="#bundle">Bundle</a>
                 <a class="button-1" href="#contact">Contact</a>
             </ul>
+        </nav>
     </div>
     <section id="home" style="background: url(src/img/hero-image.svg) no-repeat center center/cover;">
         <div id="greetBox">
             <h1 id="title"><p>|</p></h1>
             <span>"Tell Us Your Dream, We'll Make It Real!"</span>
-            <a href="#about">Get Started</a>
+            <a href="#about" class="button-2">Get Started</a>
         </div>
     </section>
     <section id="about">
@@ -34,17 +36,17 @@
             <span>Making your Website Artistic and Life</span>
         </div>
         <div id="aboutContainer">
-            <div class="about-sect" style="animation-range: entry 0% cover 10%;">
+            <div class="about-sect glass-box" style="animation-range: entry 0% cover 10%;">
                 <h2>Who We Are?</h2>
                 <p>MasDesign are an independent startup company founded in 2026 in Jakarta, Indonesia. 
                 The current internet era is the background to our presence in providing UI/UX design services.</p>
             </div>
-            <div class="about-sect" style="animation-range: entry 0% cover 15%;">
+            <div class="about-sect glass-box" style="animation-range: entry 0% cover 15%;">
                 <h2>What We Do?</h2>
                 <p>We are here to help clients bring their imagination and personal or business 
                 website designs to life with heart and a touch of art.</p>
             </div>
-            <div class="about-sect" style="animation-range: entry 0% cover 20%;">
+            <div class="about-sect glass-box" style="animation-range: entry 0% cover 20%;">
                 <h2>Why Choose Us?</h2>
                 <p>We guarantee the quality and performance of MasDesign work and provide the best service. 
                 This is proven by the 250+ clients who have given us positive feedback and created their own websites.</p>
@@ -91,37 +93,37 @@
     <section id="bundle" style="background: url(src/img/bundle-background.svg) no-repeat center center/cover;">
         <h1 class="section-title">Check Our Bundle</h1>
         <div id="bundleContainer">
-            <div class="bundle-cards" style="animation-range: entry 0% cover 10%;">
+            <div class="bundle-cards glass-box" style="animation-range: entry 0% cover 10%;">
                 <div class="info" style="background: linear-gradient(45deg, #ff8800, #f8a100);">
                     <h3>Bronze</h3>
                     <span><b>Rp.</b> 49.999</span>
                 </div>
                 <span class="benefits">Simple Design, for Educational and Personal</span>
-                <a href="#check-out">Check-Out</a>
+                <a href="#check-out" class="button-2">Check-Out</a>
             </div>
-            <div class="bundle-cards" style="animation-range: entry 0% cover 15%;">
+            <div class="bundle-cards glass-box" style="animation-range: entry 0% cover 15%;">
                 <div class="info" style="background: linear-gradient(45deg, #8f8f8f, #e6e6e6);">
                     <h3>Silver</h3>
                     <span><b>Rp.</b> 99.999</span>
                 </div>
                 <span class="benefits">Standard Design, for Blog and Simple Start-Up Project</span>
-                <a href="#check-out">Check-Out</a>
+                <a href="#check-out" class="button-2">Check-Out</a>
             </div>
-            <div class="bundle-cards" style="animation-range: entry 0% cover 20%;">
+            <div class="bundle-cards glass-box" style="animation-range: entry 0% cover 20%;">
                 <div class="info" style="background: linear-gradient(45deg, #ffe600, #fffc52);">
                     <h3>Gold</h3>
                     <span><b>Rp.</b> 149.999</span>
                 </div>
                 <span class="benefits">High-Level Design, for Bussines and Big Company</span>
-                <a href="#check-out">Check-Out</a>
+                <a href="#check-out" class="button-2">Check-Out</a>
             </div>
-            <div class="bundle-cards" style="animation-range: entry 0% cover 25%;">
+            <div class="bundle-cards glass-box" style="animation-range: entry 0% cover 25%;">
                 <div class="info" style="background: linear-gradient(45deg, #8400ff, #c747fa);">
                     <h3>Platinum</h3>
                     <span><b>Rp.</b> 299.999</span>
                 </div>
                 <span class="benefits">Premium Design, for Complex User</span>
-                <a href="#check-out">Check-Out</a>
+                <a href="#check-out" class="button-2">Check-Out</a>
             </div>
         </div>
     </section>
@@ -132,7 +134,7 @@
                 <form>
                     <input type="text" placeholder="username" name="username">
                     <input type="text" placeholder="feedback" name="feedback">
-                    <button id="submit" style="background-color: black;">Submit</button>
+                    <button id="submit" style="background-color: black;" class="button-2">Submit</button>
                 </form>
             </div>
             <div id="siteMap">
@@ -146,10 +148,10 @@
         </div>
         <hr style="border: 1px solid #1d1d1d; width: 80%; margin: 20px auto;">
         <div id="mediaList">
-            <a href="" style="background-color: black;"><img src="src/img/google-ico.svg" width="30px" height="30px"></a>
-            <a href="" style="background-color: black;"><img src="src/img/instagram-ico.svg" width="30px" height="30px"></a>
-            <a href="" style="background-color: black;"><img src="src/img/linkedin-ico.svg" width="30px" height="30px"></a>
-            <a href="" style="background-color: black;"><img src="src/img/telegram-ico.svg" width="30px" height="30px"></a>
+            <a href="" style="background-color: black;" class="button-2"><img src="src/img/google-ico.svg" width="30px" height="30px"></a>
+            <a href="" style="background-color: black;" class="button-2"><img src="src/img/instagram-ico.svg" width="30px" height="30px"></a>
+            <a href="" style="background-color: black;" class="button-2"><img src="src/img/linkedin-ico.svg" width="30px" height="30px"></a>
+            <a href="" style="background-color: black;" class="button-2"><img src="src/img/telegram-ico.svg" width="30px" height="30px"></a>
         </div>
         <footer>Copyright &copy; 2026, All Right Reserved Masagus Ahmad Ramadhan</footer>
     </section>
