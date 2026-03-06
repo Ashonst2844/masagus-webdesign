@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MasDesign</title>
     <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/responsive.css">
     <link rel="shortcut icon" href="src/img/web-ico.svg" type="image/x-icon">
 </head>
 <body>
     <div id="header">
         <h1>MasDesign</h1>
-        <button class="button-1" onclick="openLogin()">Register/Login</button>
-        <label for="menuNav" class="button-1">Menu</label>
+        <a class="button-1 desk-mode" href="account.html">Register/Login</a>
+        <label for="menuNav" class="button-1 desk-mode">Menu</label>
+        <label for="menuNav" class="button-1 mob-mode">
+            <img src="src/img/bars-solid-full.svg" width="30px" height="30px">
+        </label>
         <input type="checkbox" name="menuNav" id="menuNav" style="display: none;">
         <nav id="nav">
             <ul>
@@ -23,7 +27,7 @@
             </ul>
         </nav>
     </div>
-    <section id="home" style="background: url(src/img/hero-image.svg) no-repeat center center/cover;">
+    <section id="home">
         <div id="greetBox">
             <h1 id="title"><p>|</p></h1>
             <span>"Tell Us Your Dream, We'll Make It Real!"</span>
@@ -91,7 +95,9 @@
         </div>
     </section>
     <section id="bundle" style="background: url(src/img/bundle-background.svg) no-repeat center center/cover;">
-        <h1 class="section-title">Check Our Bundle</h1>
+        <div id="bundleTitle">
+            <h1 class="section-title">Check Our Bundle</h1>
+        </div>
         <div id="bundleContainer">
             <div class="bundle-cards glass-box" style="animation-range: entry 0% cover 10%;">
                 <div class="info" style="background: linear-gradient(45deg, #ff8800, #f8a100);">
@@ -99,7 +105,7 @@
                     <span><b>Rp.</b> 49.999</span>
                 </div>
                 <span class="benefits">Simple Design, for Educational and Personal</span>
-                <a href="#check-out" class="button-2">Check-Out</a>
+                <a href="#check-out" class="button-2">See More!</a>
             </div>
             <div class="bundle-cards glass-box" style="animation-range: entry 0% cover 15%;">
                 <div class="info" style="background: linear-gradient(45deg, #8f8f8f, #e6e6e6);">
@@ -107,7 +113,7 @@
                     <span><b>Rp.</b> 99.999</span>
                 </div>
                 <span class="benefits">Standard Design, for Blog and Simple Start-Up Project</span>
-                <a href="#check-out" class="button-2">Check-Out</a>
+                <a href="#check-out" class="button-2">See More!</a>
             </div>
             <div class="bundle-cards glass-box" style="animation-range: entry 0% cover 20%;">
                 <div class="info" style="background: linear-gradient(45deg, #ffe600, #fffc52);">
@@ -115,7 +121,7 @@
                     <span><b>Rp.</b> 149.999</span>
                 </div>
                 <span class="benefits">High-Level Design, for Bussines and Big Company</span>
-                <a href="#check-out" class="button-2">Check-Out</a>
+                <a href="#check-out" class="button-2">See More!</a>
             </div>
             <div class="bundle-cards glass-box" style="animation-range: entry 0% cover 25%;">
                 <div class="info" style="background: linear-gradient(45deg, #8400ff, #c747fa);">
@@ -123,7 +129,7 @@
                     <span><b>Rp.</b> 299.999</span>
                 </div>
                 <span class="benefits">Premium Design, for Complex User</span>
-                <a href="#check-out" class="button-2">Check-Out</a>
+                <a href="#check-out" class="button-2">See More!</a>
             </div>
         </div>
     </section>
@@ -137,7 +143,7 @@
                     <button id="submit" style="background-color: black;" class="button-2">Submit</button>
                 </form>
             </div>
-            <div id="siteMap">
+            <div id="siteMap" class="desk-mode">
                 <h2>Site Map</h2>
                 <a href="#home">Home</a>
                 <a href="#about">About Us</a>

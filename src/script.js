@@ -11,10 +11,6 @@ function typeWriter() {
 }
 document.addEventListener("DOMContentLoaded", typeWriter);
 
-function openLogin() {
-  location.href = "account.html"
-}
-
 let swipeState = false;
 const swiperCheck = document.getElementById("swiperCheck");
 function toggleSwipe() {
